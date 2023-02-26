@@ -1,0 +1,55 @@
+body {
+	overflow: hidden;
+	box-sizing: border-box;
+	vertical-align: middle;
+	background: linear-gradient(90deg, rgba(28,53,119,1) 17%, rgba(9,63,128,1) 80%);
+}
+#main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.table {
+	background: rgba(99, 99, 99, 0.25);
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 20px;
+	display: flex;
+	border-radius: 20px;
+}
+
+table {
+	margin: 0 auto;
+	color: #fff;
+	font-family: 'Courier New', Courier, monospace;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table caption {
+	font-size: 25px;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 600;
+}
+
+th, td {
+	position: relative;
+	padding: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: none;
+	transition: all .3s ease;
+}
+
+.pseudo::after {
+    content: '';
+    left: 0;
+	top: 0;
+    position: absolute;
+    transition: 500ms ease-in-out;
+    width: 100%;
+    z-index: -1;
+    height: var(--height);
+    box-shadow: var(--shadow);
+}
